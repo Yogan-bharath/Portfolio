@@ -10,21 +10,15 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    height:100%;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
     background-color:var(--firt-color)
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.conteiner{
-    border: 2px solid black ;
-    width: 100%;
-    color:white;
-    background-image: url(./images/pawel-czerwinski-bX9B9c-YasY-unsplash.jpg);
-    margin-bottom: 30px;
-    opacity: 0.7;
 }
 footer{
     width: 100%;
@@ -34,65 +28,73 @@ footer{
     justify-content: space-between;
     padding: 1.3em 1.8em;
     align-items: center;
-    font-size: 20px;
-    border:2px solid black;
+    font-size: 1.39vw;
+    border: 0.14vw solid black;
     border-top-color: var(--five-color);
-    border-radius: 2px;
+    border-radius: 0.14vw;
 }
 .foot-img{
-    width: 50px;
-    height: 50px;
+    width: 3.47vw;
+    height: 6.94vh;
 }
 footer section a{
-    /* border: 2px solid white; */
-    margin-left:20px;
+    /* border: 0.14vw solid white; */
+    margin-left: 1.39vw;
 }
 .project-sec{
     color: var(--four-color);
-
+    
     background-color: var(--firt-color);
 }
 .project-sec h2{
     font-weight: 600;
-    font-size: 60px;
-    margin-left: 40px;
+    font-size: 4.17vw;
+    margin-left: 2.78vw;
 }
 .project{
-    /* border: 2px solid black;  */
+    /* border: 0.14vw solid black;  */
     display: flex;
     justify-content:space-between;
-    margin: 40px;
+    margin: 2.78vw;
 }
 .project img{
-    width: 600px;
-    height: 350px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 15px rgb(0,0,0,0.5);
+    width: 41.67vw;
+    height: 48.61vh;
+    border-radius: 0.69vw;
+    box-shadow: 0.28vw 4px 15px rgb(0,0,0,0.5);
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+.project img:hover{
+    
+    cursor:pointer;
+    transform: translateY(-8px);   
 }
 .project-content{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid black; */
-    margin-left: 40px; 
+    /* border: 0.14vw solid black; */
+    margin-left: 2.78vw; 
     padding:0.5em 0.3em;
 }
 .project-content h3{
-    font-size: 50px;
+    font-size: 3.47vw;
     font-weight: 800;
     color:black;
 
 }
 .project-content p{
-    font-size:30px;
-    margin-top: 20px;
+    font-size: 2.08vw;
+    margin-top: 2.78vh;
     font-weight: 200;
 }
 .project-content button{
-    width: 120px;
-    height: 40px;
-    margin-top: 20px;
-    font-size: 20px;
-    border-radius: 8px;
+    width: 8.33vw;
+    height: 5.56vh;
+    margin-top: 2.78vh;
+    font-size: 1.39vw;
+    border-radius: 0.56vw;
     background-color: var(--second-color);
     transition-property: transform;
     transition-duration: 0.4s;
@@ -101,7 +103,7 @@ footer section a{
 .project-content a{
     color: var(--four-color);
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 0.14vw;
 }
 .project-content button:hover{
     cursor:pointer;
@@ -111,160 +113,173 @@ footer section a{
     color: var(--four-color);
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 2.78vh;
 }
 .education h2{
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: 3.47vw;
+    margin-top: 2.78vh;
     font-weight: 700;
-    margin-left: 40px;
+    margin-left: 2.78vw;
 }
 .education section{
-    margin-left: 50px;
+    margin-left: 3.47vw;
 }
 .education section h3{
-    font-size: 25px;
-    letter-spacing: 2px;
-    margin-top: 20px;
+    font-size: 1.74vw;
+    letter-spacing: 0.14vw;
+    margin-top: 2.78vh;
     color: var(--second-color);
     font-weight: bold;
 }
 .education section p{
-    font-size: 25px;
-    margin-top: 10px;
+    font-size: 1.74vw;
+    margin-top: 1.39vh;
 }
 nav{
     display: flex;
     justify-content: space-between;
     background-color:rgba(0, 0, 0, 0.707);
-    padding: 20px 30px;
+    padding: 1rem 1.2rem;
 }
 nav section a{
-    margin-left: 20px;
+    margin-left: 1.39vw;
 }
 nav h1{
     color: #F2E9E4;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-left: 20px;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-left: 1.39vw;
 }
 nav img{
-    width: 50px;
-    height: 50px;
+    width: 1.9rem;
+    height: 1.9rem;
 }
 nav ul{
-    /* border: 2px solid white; */
+    /* border: 0.14vw solid white; */
     width: 30%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
-    border-radius:50px;
+    padding: 0.69vw 20px;
+    border-radius: 3.47vw;
     /* background-color: rgba(128, 128, 128, 0.701) */
-
+    
 }
 nav ul li{
     list-style: none;
 }
 nav ul li a{
-    /* border: 2px solid white;  */
-    font-size: 24px;
-    padding: 10px 20px;
-    border-radius:50px;
+    /* border: 0.14vw solid white;  */
+    font-size: 1rem;
+    padding: 0.69vw 20px;
+    border-radius: 3.47vw;
     background-color:#4A4E69;
     text-decoration: none;
     color:white
 }
 nav ul li a:hover{
     background-color:#4a4e699a;
-
+    
 }
 header{
-    margin:50px 40px;
+    margin: 1.5vw 40px;
+}
+.conteiner{
+    border: 1px solid black ;
+    width: 100%;
+    color:white;
+    background-image: url(./images/pawel-czerwinski-bX9B9c-YasY-unsplash.jpg);
+    margin-bottom: 4.17vh;
+    opacity: 0.7;
 }
 header h1{
-    font-size: 70px;
+    font-size: 3.3vw;
 }
 header span{
     color: #C9ADA7;
 }
 header>h2{
     color: #C9ADA7;
-    font-size: 50px;
+    font-size: 3vw;
 }
 .About h2{
-    font-size: 40px;
+    font-size: 2vw;
 }
 .About p{
-     font-size: 30px;
+     font-size: 1.5vw;
 }
 .About button{
-    width: 120px;
-    height: 40px;
-    margin-top: 20px;
-    font-size: 20px;
-    border-radius: 8px;
+    width: 8vw;
+    height: 5vh;
+    margin-top: 2.78vh;
+    font-size: .7vw;
+    border-radius: 0.56vw;
     background-color: black;
     transition-property: transform;
     transition-duration: 0.4s;
     transition-timing-function: ease;
     border:0.4px solid white;
-    box-shadow: 3px 2px 10px rgb(256,256,256,0.7);
+    box-shadow: 0.21vw 2px 10px rgb(256,256,256,0.7);
 }
 .About a{
     color: var(--four-color);
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 .About button:hover{
     cursor:pointer;
     transform: translateY(-8px);
 }
+
+/* skills */
 .skills{
-    font-size: 30px;
-    margin-bottom: 30px;
-    margin-left: 40px;
-    /* border: 4px solid black; */
+    font-size: 1.5vw;
+    margin-bottom: 4.17vh;
+    margin-left: 2vw;
+    /* border: 0.28vw solid black; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding-right: 100px;
-    height: 4000px;
+    padding-right:0.3vw;
+    height: 555.56vh;
     position: relative;
+    gap:2vw;
 }
 .skill-left{
     align-self: flex-start;
-    margin-top: 0px;
-    /* border: 3px solid red; */
+    margin-top: 0.0vh;
+    /* border: 0.21vw solid red; */
     position: sticky;
-    top: 550px;
+    /* top: 76.39vh; */
+    top: 5vh;
 }
 .skill{
     color: #a496a4;
 }
 #iknow{
-    margin-left: 60px;
+    margin-left: 4.17vw;
 }
 .skill-right{
-    margin-right: 200px;
+    margin-right:2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-self: flex-start;
 }
 #card{
-    width: 400px;
-    height: 400px;
+    width: 27.78vw;
+    height: 55.56vh;
     overflow: hidden;
-    margin-bottom: 110px;
-    /* border: 3px solid red; */
+    margin-bottom: 15.28vh;
+    /* border: 0.21vw solid red; */
     position: relative;
     background-color: white;
-    border-radius: 25px;
-    box-shadow: 8px 5px 20px rgb(0,0,0,0.5);
+    border-radius: 1.74vw;
+    box-shadow: 0.56vw 5px 20px rgb(0,0,0,0.5);
+    
 }
 #card img{
-    width: 400px;
-    height: 400px;
+    width: 27.78vw;
+    height: 55.56vh;
     /* object-fit: cover; */
 }
 #card h2{
@@ -272,24 +287,25 @@ header>h2{
     left: 0;
     bottom:0;
     right: 0;
-    font-size: 50px;
-    padding-left:40px;
+    font-size: 3.47vw;
+    padding-left: 2.78vw;
     background-color: rgba(0, 0, 0, 0.355);
     color: #F2E9E4;
     font-weight: 400;
 }
 .skill-left h2{
     color: var(--four-color);
-    font-size: 30px;
+    font-size: 2.08vw;
     font-weight: 400;
 }
-@media (max-width:738px){
+@media (max-width:480px){
     nav section a{
         display: none;
     }
-    body{
-        width: 370px;
-        height: 100vh;
+body {
+        width: 100%;
+        padding: 0px;
+        overflow-x: hidden;
     }
     footer{
         font-size: 0.9em;
@@ -344,7 +360,7 @@ header>h2{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    margin: 20px;
+    margin: 30px 20px;
 }
 .project img{
     width: 99%;
@@ -404,7 +420,7 @@ nav ul{
     margin-top: 10px;
     margin-right: 70px;
     border-radius:50px;
-    gap: 2px;
+    gap: 10px;
     /* background-color: rgba(128, 128, 128, 0.701) */
 
 }
@@ -462,7 +478,7 @@ header>h2{
 .skill-left{
     align-self: flex-start;
     position: sticky;
-    top: 180px;
+    top: 70px;
 }
 .skill{
     color: var(--third-color);
@@ -485,7 +501,7 @@ header>h2{
     width: 150px;
     height: 150px;
     overflow: hidden;
-    margin-bottom: 55px;
+    margin-bottom: 100px;
     /* border: 3px solid red; */
     position: relative;
     background-color: white;
@@ -515,6 +531,9 @@ header>h2{
 }
 svg{
     width: 18px;
+}
+.project-sec{
+    margin-top: 50px;
 }
 
 
